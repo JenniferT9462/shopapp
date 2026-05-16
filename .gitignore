@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+.env
+shopapp-frontend/node_modules/
+shopapp-frontend/dist/
+static/assets/

@@ -1,0 +1,23 @@
+info:
+  name: post customer
+  type: http
+
+http:
+  method: POST
+  url: http://127.0.0.1:5000/customers
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Joe Dirt",
+        "email": "joeDirt@gmail.com",
+        "phone": "225-345-5678",
+        "address": "456 McDonald Ave, Baton Rouge, LA 70808"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
